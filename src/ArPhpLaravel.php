@@ -9,6 +9,16 @@ class ArPhpLaravel
         return new \ArPHP\I18N\Arabic();
     }
 
+    public static function spellGetMisspelled($text)
+    {
+        return self::Arabic()->spellGetMisspelled($text);
+    }
+
+    public static function spellSuggestCorrections($text)
+    {
+        return self::Arabic()->spellSuggestCorrections($text);
+    }
+
     public static function isArabic($text)
     {
         return self::Arabic()->isArabic($text);
